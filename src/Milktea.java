@@ -24,7 +24,7 @@ class SignatureMilktea extends Milktea {
 
 class OolongMilktea extends Milktea {
 	
-	public OolongMilktea() {
+	public OolongMilktea() { 
 		this.price = 4.5;
 	}
 }
@@ -65,7 +65,7 @@ class SignatureMilkteaBuilder implements MilkteaBuilder {
 	
 	@Override
 	public Milktea getProduct() {
-		System.out.format("Signature milktea: %s %s %s\n", this.product.topping, this.product.tea, this.product.sugar);
+		System.out.format("Signature milktea: %s, %s, %s\n", this.product.topping, this.product.tea, this.product.sugar);
 		return this.product;
 	}
 }
@@ -96,7 +96,7 @@ class OolongMilkteaBuilder implements MilkteaBuilder {
 	
 	@Override
 	public Milktea getProduct() {
-		System.out.format("Signature milktea: %s %s %s\n", this.product.topping, this.product.tea, this.product.sugar);
+		System.out.format("Oolong Milktea: %s, %s, %s\n", this.product.topping, this.product.tea, this.product.sugar);
 		return this.product;
 	}
 }
@@ -123,7 +123,7 @@ class CustomizedMilkteaBuilder {
 	}
 	
 	public Milktea getProduct() {
-		System.out.format("Signature milktea: %s %s %s\n", this.product.topping, this.product.tea, this.product.sugar);
+		System.out.format("Customized Milktea: %s, %s, %s\n", this.product.topping, this.product.tea, this.product.sugar);
 		return this.product;
 	}
 }
